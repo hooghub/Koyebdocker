@@ -1,4 +1,7 @@
 {
+  "log": {
+    "loglevel": "info"
+  },
   "inbounds": [
     {
       "port": 8000,
@@ -6,23 +9,21 @@
       "settings": {
         "clients": [
           {
-            "id": "{{UUID}}",
-            "level": 0,
-            "email": "user@example.com"
+            "id": "12345678-90ab-cdef-1234-567890abcdef",
+            "flow": ""
           }
         ],
         "decryption": "none"
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "tls"
+        "security": "none"
       }
     }
   ],
   "outbounds": [
     {
-      "protocol": "freedom",
-      "settings": {}
+      "protocol": "freedom"
     }
   ]
 }
